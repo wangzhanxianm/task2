@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        table,td{
+			border:1px solid;
+            border-collapse:collapse;
+		}
+		.aaa{
+			width:40px ;
+			padding:10px 0;
+			text-align:center;
+		}
+		table,td{
+			border:solid 1px;
+            border-collapse:collapse;
+		}
+		.bbb{
+			width:40px ;
+			padding:10px 0;
+			text-align:center;
+		}
+		table,td{
+			border:solid 1px;
+			border-collapse:collapse;
+		}
+		.ccc{
+		width: 80px;
+		height: 100px;
+		text-align:center;
+		padding:10px 0;
+		}
+        </style>
+    </head>
+    <body>
+        <table>
+    <tr>
+    	<td colspan="2" class="aaa">1</td>
+    	<td rowspan="2" class="aaa">2</td>
+    </tr>
+    <tr>
+    	<td rowspan="2" class="aaa">3</td>
+    	<td class="aaa">4</td>
+    </tr>
+    <tr>
+    	<td colspan="2" class="aaa">5</td>
+    </tr>
+    </table>
+    <hr>
+    <table>
+    <tr>
+    <td rowspan="2" class="bbb">1</td>
+    <td rowspan="2" class="bbb">2</td>
+    <td colspan="2" class="bbb">3</td>
+    </tr>
+    <tr>
+    <td colspan="2" class="bbb">4</td>
+</tr>
+    <tr>
+    <td colspan="2" class="bbb">5</td>
+    <td rowspan="2" class="bbb">7</td>
+    <td rowspan="2" class="bbb">8</td>
+</tr>
+    <tr>
+    <td colspan="2" class="bbb">6</td>
+</tr>
+    </table>
+    <hr>
+    	<table>
+		<tr>
+		<td rowspan="2" class="ccc">1</td>
+		<td colspan="2" rowspan="2" class="ccc">2</td>
+		<!-- <td>3</td> -->
+		<td rowspan="2" class="ccc">4</td>
+	</tr>
+		<tr>
+		<!-- <td>5</td> -->
+		<!-- <td>6</td> -->
+		<!-- <td>7</td> -->
+		<!-- <td>8</td> -->
+	</tr>
+		<tr>
+		<td rowspan="2" class="ccc">9</td>
+		<td colspan="2" class="ccc">10</td>
+		<!-- <td>11</td> -->
+		<td rowspan="2" class="ccc">12</td>
+	</tr>
+		<tr>
+		<!-- <td>13</td> -->
+		<td class="ccc">14</td>
+		<td class="ccc">15</td>
+		<!-- <td>16</td> -->
+		</tr>
+		<tr>
+		<td class="ccc">17</td>
+		<td colspan="2" class="ccc">18</td>
+		<!-- <td>19</td> -->
+		<td class="ccc">20</td>
+		</tr>
+	</table>
+	<hr>
+	    	<form action="" method="post">
+    		<p>
+    			<label for="yhm">用户名:</label>
+    			<input id="yhm" type="text" name="yhm" value="">
+    		</p>
+    		<p>
+    			<label for="mm">密码:</label>
+    			<input type="password" name="mm" id="mm" vlaue="">
+    		</p>
+    		<p>
+    			<label for="xb">性别:</label>
+    		<input type="radio" name="xb" id="nan">
+    		<label for="nan">男</label>
+    		<input type="radio" name="xb" ind="nv">
+    		<label for="nv">女</label>
+    		</p>
+    		<p>
+    			爱好:
+    			<input type="checkbox" name="ah" id="sw" checked>
+    			<label for="s">上网</label>
+    			<input type="checkbox" name="ah" id="lq" >
+    			<label for="s">乒乓球</label>
+    			<input type="checkbox" name="ah" id="zq" >
+    			<label for="s">网球</label>
+    			<input type="checkbox" name="ah" id="kj" >
+    			<label for="s">逛街</label>
+    			<input type="checkbox" name="ah" id="cg" >
+    			<label for="s">唱歌</label>
+    			<input type="checkbox" name="ah" id="dw" >
+    			<label for="s">台球</label>
+    			<input type="checkbox" name="ah" id="pq" >
+    			<label for="s">排球</label>
+    		</p>
+    		<p>
+    			居住地：
+    			<select name="jzd">
+    				<option value="河北省">河北省</option>
+    				<option value="北京市" selected>秦皇岛市</option>
+    				<option value="天津市">保定市</option>
+    			</select>
+    		</p>
+    		<p>
+    			<label for="tel">Tel:</label>
+    			<input id="tel" type="text" name="tel" value="">
+    		</p>
+    		<p>
+    			<label for="E-mail">E-mail:</label>
+    			<input id="em" type="text" name="em" value="">
+    		</p>
+    		<p>
+    			<label for="j">简介:</label>
+    			<textarea name="j" id="j" cols="30" rows="10"></textarea>
+    		</p>
+    		<p>
+    			<input type="submit" value="注册">
+    			<input type="reset" value="取消">
+    		</p>
+    	</form>
+    	<hr>
+    	    	<p>
+    		<label for="name">name:</label>
+    		<input type="name" type="next" name="xingming" value="">
+    	</p>
+    	<p>
+    		<label for="password">pwd:</label>
+    		<input type="password" name="mm" id="mm" vlaue>
+    	</p>
+    	<p>
+    		<label for="xb">sex:</label>
+    		<input type="radio" name="xb" id="male" checked="">
+    		<label for="male">male</label>
+    		<input type="radio" name="xb" id="female">
+    		<label for="male">female</label>
+    	</p>
+    	<p>
+    		age:
+    		<select name="age">
+    			<option value="1">1</option>
+    			<option value="2" selected="">2</option>
+    			<option value="3">3</option>
+    			<option value="4">4</option>
+    		</select>
+    	</p>
+    		<p>
+    			course:
+    			<input type="checkbox" name="course" id="ch">
+    			<label for="c">Chinesee</label>
+    			<input type="checkbox" name="course" id="ma">
+    			<label for="ma">Math</label>
+    			<input type="checkbox" name="course" id="en">
+    			<label for="en">English</label>
+    		</p>
+    		<p>
+    			<input type="submit" value="Submit it!">
+    			<input type="reset" value="Reset it!">
+    		</p>
+    	</p>
+    </body>
+</html>
